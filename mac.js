@@ -37,13 +37,17 @@ const deliveryy = document.getElementById('delivery-withcharge').addEventListene
 // promocode
 
 document.getElementById('apply-btn').addEventListener('click',function(){
-    const promoInput = document.getElementById('promo-input').value;
+    const promoInput = document.getElementById('promo-input');
+    const promoInputValue = promoInput.value;
     const subtotal = document.getElementById('subtotal').innerText;
+    
 
-    if(promoInput == 'stevekaku'){
+    if(promoInputValue == 'stevekaku'){
         const discountPrice = (subtotal-(subtotal*20)/100);
         document.getElementById('grand-total').innerText=discountPrice;
     }
+    promoInput.value = '';
+    
 })
 
 // extra cost setting function 
