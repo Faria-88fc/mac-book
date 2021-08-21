@@ -20,18 +20,23 @@
                     <h1 class="text-3xl font-medium">Customize your Blue 24-inch iMac with Apple M1 chip</h1>
                     <p class="text-sm mt-2">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USA 4 ports  Magic Mouse Magic keyboard-us english.</p>
     
+                    <!-- memory -->
                     <h4 class="text-lg font-medium mt-4 mb-px">Memory</h4>
-                    <button class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">8GB unified memory</button>
-                    <button class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">16GB unified memory</button>
+                    <button id="memory-8GB-btn" class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">8GB unified memory</button>
+                    <button id="memory-16GB-btn" class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">16GB unified memory</button>
     
+                    <!-- storage -->
                     <h4 class="text-lg font-medium mt-8 mb-px">Storage</h4>
-                    <button class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">256SSD Storage</button>
-                    <button class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">512SSD Storage</button>
-                    <button class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">1TB Storage</button>
+                    <button id="storage-256-ssd" class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">256SSD Storage</button>
+                    <button id="storage-512-ssd" class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">512SSD Storage</button>
+                    <button id="storage-1tb" class="border-2 p-1 my-px text-sm shadow-md rounded border-gray-400">1TB Storage</button>
     
+                    <!-- delivery cost -->
                     <h4 class="text-lg font-medium mt-8 mb-px">Choose your delivery option</h4>
-                    <button class="border-2 p-1 text-sm mt-px shadow-md rounded border-gray-400">Friday,Aug 25 FREE Prime Delivery</button>
-                    <button class="border-2 p-1 text-sm mt-px shadow-md rounded border-gray-400">Friday,Aug 21 Delivery  charge $20</button>
+                    <button id="free-delivery" class="border-2 p-1 text-sm mt-px shadow-md rounded border-gray-400">Friday,Aug 25 FREE Prime Delivery</button>
+                    <button id="delivery-withcharge" class="border-2 p-1 text-sm mt-px shadow-md rounded border-gray-400">Friday,Aug 21 Delivery  charge $20</button>
+
+                    <!-- extra total price -->
                     <div class="grid grid-cols-2 w-3/4 mt-8 ml-2 text-sm font-medium">
                         <div>
                             <p>Best Price</p>
@@ -46,32 +51,37 @@
                             <hr>
                         </div>
                         <div>
-                            <p>$<span>1299</span></p>
+                            <p>$<span id="best-price">1299</span></p>
                             <hr>
-                            <p>$<span>0</span></p>
+                            <p>$<span id="extra-memory-cost">0</span></p>
                             <hr>
-                            <p>$<span>0</span></p>
+                            <p>$<span id="extra-ssd-cost">0</span></p>
                             <hr>
-                            <p>$<span>0</span></p>
+                            <p>$<span id="delivery-charge">0</span></p>
                             <hr class=" border-gray-900">
-                            <p>$<span>1299</span></p>
+                            <p>$<span id="subtotal">1299</span></p>
                             <hr>
                         </div>
                     </div>
+
+                    <!-- promo code -->
                     <p class="ml-2 mt-6 text-sm font-medium">Add Pomo code</p>
-                    <input class="border-2 mt-px p-2 rounded w-2/4" type="text" placeholder="enter your code">
-                    <button class="rounded-lg bg-red-500 px-8 py-2 text-white mb-4">Apply</button>
+                    <input id="promo-input" class="border-2 mt-px p-2 rounded w-2/4" type="text" placeholder="enter your code">
+                    <button id="apply-btn" class="rounded-lg bg-red-500 px-8 py-2 text-white mb-4">Apply</button>
 
                 </div>
             </div>
         </section>
         <hr>
         <section>
+
+            <!-- total -->
             <p class="text-2xl font-medium text-center mt-4 mb-16">
-                Total: $<span>1299</span>
+                Total: $<span id="grand-total">1299</span>
             </p>
         </section>
     </main>
+    <script src="mac.js"></script>
     
 </body>
 </html>
