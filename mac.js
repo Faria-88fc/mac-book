@@ -1,3 +1,4 @@
+// memory cost evnthandler
 const extraMemoryCostt = document.getElementById('memory-8GB-btn').addEventListener('click', function(){
     productsCost('extra-memory-cost', 0);
     updateTotal ();
@@ -8,7 +9,7 @@ const extraMemoryCost = document.getElementById('memory-16GB-btn').addEventListe
 })
 
 
-
+// storage cost event handler
 const extraStorageCostt = document.getElementById('storage-256-ssd').addEventListener('click', function(){
     productsCost("extra-ssd-cost",0);
     updateTotal ();
@@ -23,7 +24,7 @@ const strCost = document.getElementById('storage-1tb').addEventListener('click',
     updateTotal ();
 })
 
-
+// delivery eventhandler
 const delivery = document.getElementById('free-delivery').addEventListener('click', function(){
     productsCost("delivery-charge",0);
     updateTotal ();
